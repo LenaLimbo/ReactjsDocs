@@ -7,6 +7,8 @@ JavaScript project ideas:
 https://www.codementor.io/projects/javascript
 **********
 react js:
+https://www.crio.do/projects/category/react-projects
+
 https://www.codementor.io/projects/reactjs
 
 https://reactjs.org/community/examples.html
