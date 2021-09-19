@@ -4,6 +4,8 @@ HTML/CSS project ideas:
 https://www.codementor.io/projects/html_css
 **********
 JavaScript project ideas:
+https://www.crio.do/projects/category/javascript-projects
+
 https://www.codementor.io/projects/javascript
 **********
 react js:
