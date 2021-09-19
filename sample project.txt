@@ -1,0 +1,20 @@
+sample projects
+**********
+HTML/CSS project ideas:
+https://www.codementor.io/projects/html_css
+**********
+JavaScript project ideas:
+https://www.codementor.io/projects/javascript
+**********
+react js:
+https://www.codementor.io/projects/reactjs
+
+https://reactjs.org/community/examples.html
+
+https://www.golangprograms.com/react-js-projects-for-beginners.html
+
+https://www.devaradise.com/react-example-projects
+
+https://www.creative-tim.com/blog/web-development/best-reactjs-project-examples/
+
+**********
