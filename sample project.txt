@@ -9,6 +9,8 @@ https://www.crio.do/projects/category/javascript-projects
 https://www.codementor.io/projects/javascript
 **********
 react js:
+https://www.devaradise.com/react-example-projects#1_Choose_Only_One_Project_at_A_Time
+
 https://reactjs.org/community/examples.html
 
 https://www.crio.do/projects/category/react-projects
