@@ -1,0 +1,75 @@
+************
+LVL 1
+148 - 149
+************
+1 - install redux
+2 - create store
+the most important sector is store,
+consider which component contain store.
+redux is for state managment.
+3 - in index.js:
+befor app init
+we create store 
+
+import { createStore } from 'redux
+const stpre = createStore()
+
+this store work by a reducer
+
+create a folder in src -->store
+create in store a file -->reducer.js
+
+import reducer in index.js
+
+and complete this:
+const store = createStore(reducer)
+
+**************
+reducer.js:
+**************
+const initialState = {
+    counter: 0
+}
+
+const reducer = (state = initialState, action) => { 
+    return state
+}
+
+export default reducer
+
+**************
+
+Provider is a helper
+add in html.js
+import { Provider } from 'react-redux'
+
+and use <App/> inside of <Provider> </Provider> 
+
+we use provider becuase of store attribute
+
+ReactDOM.render(<Provider store={store}>
+    <App />
+</Provider>, document.getElementById('root'))
+
+index.js:
+************
+
+import React from 'react'
+import ReactDOM from 'react-dom'
+import { createStore } from 'redux'
+import reducer from '../src/store/reducer'
+import App from './App'
+import { Provider } from 'react-redux'
+import './index.css'
+
+const store = createStore(reducer)
+ReactDOM.render(
+    <Provider store={store}>
+        <App />
+    </Provider>, document.getElementById('root'))
+
+************
+LVL 2
+************
+main component that manage our state
+in this sample is counter.js
