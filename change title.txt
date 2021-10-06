@@ -1,0 +1,35 @@
+ product.js:
+ 
+  <input type="text" onChange={props.change} value={props.title}/> 
+  
+************
+App.js;
+
+changeTitlehandler = (event, id) => {
+    const productIndex = this.state.products.findIndex((item) => {
+      return item.id === id
+    })
+
+    const product = {
+      ...this.state.products[productIndex],
+    }
+
+    product.title = event.target.value
+
+    const products = [...this.state.products]
+    products[productIndex] = product
+
+    this.setState({ products: products })
+  }
+  
+  .
+  .
+  .
+   return (
+              <Product
+                click={() => this.deleteProductHandler(index)}
+                title={item.title}
+                price={item.price}
+                key={item.id}
+                change={(event) => this.changeTitlehandler(event, item.id)}
+              />
