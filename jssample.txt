@@ -1,0 +1,164 @@
+https://www.w3schools.com/jsref/tryit.asp?filename=tryjsref_win_setinterval
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>What Can JavaScript Do?</h2>
+
+<p>JavaScript can change HTML attribute values.</p>
+
+<p>In this case JavaScript changes the value of the src (source) attribute of an image.</p>
+
+<button onclick="document.getElementById('myImage').src='pic_bulbon.gif'">Turn on the light</button>
+
+<img id="myImage" src="pic_bulboff.gif" style="width:100px">
+
+<button onclick="document.getElementById('myImage').src='pic_bulboff.gif'">Turn off the light</button>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to change the HTML content of the document.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  document.body.innerHTML = "Some new HTML content";
+}
+</script>
+
+</body>
+</html>
+
+
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to create a P element with some text, and append it to the document's body.</p>
+
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  var x = document.createElement("P");
+  var t = document.createTextNode("This is a paragraph.");
+  x.appendChild(t);
+  document.body.appendChild(x);
+}
+</script>
+
+</body>
+</html>
+
+--------
+--------
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the button to wait 3 seconds, then alert "Hello".</p>
+<p>After clicking away the alert box, an new alert box will appear in 3 seconds. This goes on forever...</p>
+<button onclick="myFunction()">Try it</button>
+
+<script>
+function myFunction() {
+  setInterval(function(){ alert("Hello"); }, 3000);
+}
+</script>
+
+</body>
+</html>
+
+--------
+--------
+<!DOCTYPE html> 
+<html> 
+
+<body> 
+	<div id="message"></div> 
+	<script> 
+
+		// To display output 
+		var msg = document.getElementById("message"); 
+
+		// Timer 
+		var t = 3000; 
+		
+        f1(); 	
+        f2();
+	
+		// Fnction to run at irregular intervals 
+		function f1() { 
+			msg.innerHTML += "<p>Function Fired</p>"; 
+			setTimeout(f1, t); 
+		} 
+        
+  		function f2() { 
+			msg.innerHTML += "<p>Function stop</p>"; 
+			setTimeout(f2, t); 
+		} 
+              
+	</script> 
+</body> 
+
+</html> 
+
+------------------
+------------------
+<!DOCTYPE html>
+<html>
+<body>
+
+<p>Click the Start button to output "Hello" once every 2 seconds.</p>
+
+<p>In this example, we also output the parameters that were passed to the alertFunc() function (does not work in IE9 and earlier).</p>
+
+<button onclick="myStartFunction()">Start</button> <button onclick="myStopFunction()">Stop</button>
+
+<p id="demo"></p>
+
+<p id="demo2" style="color:red;"></p>
+
+<script>
+
+
+
+var myVar;
+
+function myStartFunction() {
+ // myVar = setInterval(alertFunc, 2000, "First parameter", "Second parameter");
+      myVar =     setInterval(function(){console.log("Oooo Yeaaa!");}, 2000);
+  
+  
+}
+
+function alertFunc(param1, param2) {
+  document.getElementById("demo").innerHTML += "Hello ";
+
+  document.getElementById("demo2").innerHTML = "Parameters passed to alertFunc(): <br>" 
+  + param1 + "<br>" + param2 + "<br>";
+}
+
+function myStopFunction() {
+  clearInterval(myVar);
+}
+</script>
+
+</body>
+</html>
+
+-----------
+----------
+---------

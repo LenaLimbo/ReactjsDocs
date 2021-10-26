@@ -1,0 +1,30 @@
+
+
+index.html:
+
+
+<html>
+<body>
+
+<p id="p1">This is a paragraph.</p>
+<p id="p2">This is another paragraph.</p>
+
+<script src="./main.js" ></script>
+
+</body>
+</html>
+
+
+-----
+main.js:
+
+var p1;
+
+p1 = decument.getElemetById("p1");
+p1.addEventListener("click",changeColor);
+
+
+function changeColor(){
+    p1.style.color="red";
+}
+

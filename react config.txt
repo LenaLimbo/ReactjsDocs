@@ -1,0 +1,23 @@
+
+config ReactJs
+
+https://ngcore.org/%D9%86%D8%B5%D8%A8-%D8%B1%DB%8C-%D8%A7%DA%A9%D8%AA-react-%D8%AA%D9%86%D8%B8%DB%8C%D9%85%D8%A7%D8%AA-%D8%B1%DB%8C-%D8%A7%DA%A9%D8%AA/
+https://vscode.readthedocs.io/en/latest/nodejs/reactjs-tutorial/
+https://medium.com/@hacurity/create-and-develop-react-applications-in-vs-code-6c8c4395e55d
+
+1 - install NodeJs:
+https://nodejs.org/en/download/
+https://nodejs.org/en/
+
+2 - create a folder for projects
+
+3 - npm init
+(ceate package.jason)
+
+4 - npm install react react-dom ***
+5 - npm install -g create-react-app  ***
+6 - create-react-app my-app ****
+7 - cd my-app
+8 - npm start
+
+

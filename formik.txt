@@ -1,0 +1,44 @@
+
+----
+formik
+https://formik.org/docs/overview
+
+----
+index.html:
+
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css"> 
+	
+after </body> :
+	
+  <script type="text/JavaScript" src="../node_modules/bootstrap/dist/js/bootstrap.min.js">
+  
+------
+------ 
+
+tailwindcss:
+ 
+1- Install Tailwind via npm
+ 
+# Using npm
+npm install tailwindcss
+
+# Using Yarn
+yarn add tailwindcss
+
+2- Add Tailwind to your CSS
+
+Use the @tailwind directive to inject Tailwind's base, components, and utilities styles into your CSS:
+
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+
+------
+
+npm remove packagename
+
+  
+	

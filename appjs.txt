@@ -1,0 +1,50 @@
+app.js
+
+import React from "react";
+import "./App.css";
+
+class TodoUI extends React.Component {
+  render() {
+    const { number, generateRandomNumber } = this.props;
+    return (
+      <div>
+        <li click={this.deleteItem}>{number}</li>
+        <div>
+          <button onClick={generateRandomNumber}>generate Random Number</button>
+        </div>
+      </div>
+    );
+  }
+}
+
+class Todo extends React.Component {
+  state = {
+    number: 0,
+  };
+
+  generateRandomNumber = () => {
+    this.setState((prev) => ({
+      ...prev,
+      number: Math.floor(Math.random() * 1000),
+    }));
+  };
+
+  render() {
+    return (
+      <TodoUI
+        number={this.state.number}
+        generateRandomNumber={this.generateRandomNumber}
+      ></TodoUI>
+    );
+  }
+}
+
+function App() {
+  return (
+    <>
+      <Todo></Todo>
+    </>
+  );
+}
+
+export default App;
