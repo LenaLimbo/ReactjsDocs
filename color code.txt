@@ -1,0 +1,12 @@
+Bom = Browser Object Model
+
+window.location.href
+window.location.hostname
+window.location.protocol
+window.location.port
+window.location.pathname
+screen.width
+screen.height
+navigator.userAgent
+navigator.onLine
+ 
